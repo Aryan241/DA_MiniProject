@@ -1,0 +1,209 @@
+{
+ "raw_shape": [
+  1000,
+  8
+ ],
+ "missing_total": 0,
+ "duplicates": 0,
+ "range_violations": 0,
+ "outliers": {
+  "math": {
+   "n": 8,
+   "lo": 27.0,
+   "hi": 107.0
+  },
+  "reading": {
+   "n": 6,
+   "lo": 29.0,
+   "hi": 109.0
+  },
+  "writing": {
+   "n": 5,
+   "lo": 25.9,
+   "hi": 110.9
+  }
+ },
+ "band_cuts": [
+  9.0,
+  62.0,
+  74.33,
+  100.0
+ ],
+ "describe": {
+  "math": {
+   "count": 1000.0,
+   "mean": 66.09,
+   "std": 15.16,
+   "min": 0.0,
+   "25%": 57.0,
+   "50%": 66.0,
+   "75%": 77.0,
+   "max": 100.0,
+   "skew": -0.28
+  },
+  "reading": {
+   "count": 1000.0,
+   "mean": 69.17,
+   "std": 14.6,
+   "min": 17.0,
+   "25%": 59.0,
+   "50%": 70.0,
+   "75%": 79.0,
+   "max": 100.0,
+   "skew": -0.26
+  },
+  "writing": {
+   "count": 1000.0,
+   "mean": 68.05,
+   "std": 15.2,
+   "min": 10.0,
+   "25%": 57.75,
+   "50%": 69.0,
+   "75%": 79.0,
+   "max": 100.0,
+   "skew": -0.29
+  },
+  "avg_score": {
+   "count": 1000.0,
+   "mean": 67.77,
+   "std": 14.26,
+   "min": 9.0,
+   "25%": 58.33,
+   "50%": 68.33,
+   "75%": 77.67,
+   "max": 100.0,
+   "skew": -0.3
+  }
+ },
+ "group_means": {
+  "gender": {
+   "female": 69.57,
+   "male": 65.84
+  },
+  "lunch": {
+   "free/reduced": 62.2,
+   "standard": 70.84
+  },
+  "test_prep": {
+   "completed": 72.67,
+   "none": 65.04
+  },
+  "parent_edu": {
+   "some high school": 65.11,
+   "high school": 63.1,
+   "some college": 68.48,
+   "associate's degree": 69.57,
+   "bachelor's degree": 71.92,
+   "master's degree": 73.6
+  }
+ },
+ "group_sizes_edu": {
+  "some high school": 179,
+  "high school": 196,
+  "some college": 226,
+  "associate's degree": 222,
+  "bachelor's degree": 118,
+  "master's degree": 59
+ },
+ "corr_math_reading": 0.818,
+ "corr_reading_writing": 0.955,
+ "corr_math_writing": 0.803,
+ "corr_avg_lunch": 0.29,
+ "corr_avg_prep": 0.257,
+ "corr_avg_edu": 0.206,
+ "corr_avg_gender": -0.131,
+ "ttest": {
+  "n_completed": 358,
+  "n_none": 642,
+  "mean_completed": 72.67,
+  "mean_none": 65.04,
+  "sd_completed": 13.04,
+  "sd_none": 14.19,
+  "levene_p": 0.08979489565932927,
+  "t": 8.595,
+  "df": 791.8,
+  "p": 4.422101350315798e-17,
+  "diff": 7.63,
+  "ci": [
+   5.89,
+   9.37
+  ],
+  "cohens_d": 0.553,
+  "mannwhitney_p": 6.202995039227689e-16,
+  "skew_a": -0.26,
+  "skew_b": -0.29
+ },
+ "anova": {
+  "F": 10.753,
+  "p": 4.383101772122132e-10,
+  "df_between": 5,
+  "df_within": 994,
+  "eta_sq": 0.0513,
+  "levene_p": 0.770301739308253,
+  "kruskal_p": 1.6475581789018132e-08,
+  "tukey_sig_pairs": [
+   [
+    "some high school",
+    "associate's degree",
+    4.46,
+    0.018311964640128187
+   ],
+   [
+    "some high school",
+    "bachelor's degree",
+    6.82,
+    0.0005626932794834394
+   ],
+   [
+    "some high school",
+    "master's degree",
+    8.49,
+    0.0007413442854761199
+   ],
+   [
+    "high school",
+    "some college",
+    5.38,
+    0.0011348649753533113
+   ],
+   [
+    "high school",
+    "associate's degree",
+    6.47,
+    3.550144130015642e-05
+   ],
+   [
+    "high school",
+    "bachelor's degree",
+    8.83,
+    9.923195659622408e-07
+   ],
+   [
+    "high school",
+    "master's degree",
+    10.5,
+    6.69226398808398e-06
+   ]
+  ],
+  "n_sig_pairs": 7
+ },
+ "chi2": {
+  "table": {
+   "free/reduced": {
+    "Low": 175,
+    "Medium": 102,
+    "High": 78
+   },
+   "standard": {
+    "Low": 161,
+    "Medium": 230,
+    "High": 254
+   }
+  },
+  "chi2": 64.56,
+  "dof": 2,
+  "p": 9.553455946472199e-15,
+  "cramers_v": 0.254,
+  "min_expected": 117.9
+ }
+}
